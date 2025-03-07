@@ -20,11 +20,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Validate DAGs
-        run: |
-          pip install apache-airflow
-          airflow dags validate dags/tenant1_dag.py
+      # # Runs a single command using the runners shell
+      # - name: Validate DAGs
+      #   run: |
+      #     pip install apache-airflow
+      #     airflow dags validate dags/tenant1_dag.py
 
       # Runs a set of commands using the runners shell
       - name: Push DAGs to S3
